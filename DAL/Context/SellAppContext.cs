@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SellerApp
 {
@@ -36,7 +34,7 @@ namespace SellerApp
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.Id);
-                
+
                 entity.Property(e => e.Id)
                     .HasColumnName("ProductID")
                     .ValueGeneratedOnAdd();
@@ -120,6 +118,7 @@ namespace SellerApp
                     .HasForeignKey(d => d.RoleId)
                     .HasConstraintName("FK_Users_Roles");
             });
+
         }
     }
 }

@@ -1,14 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using SellerApp;
 using SellerApp.Repositories.Concrete;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAL.UnitOfWork
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
 
-        private readonly DbContext _context;
+        private readonly SellAppContext _context;
         private bool _disposed = false;
 
         private ProductRepository _productRepository;
@@ -98,6 +100,5 @@ namespace DAL.UnitOfWork
         {
             _context.SaveChanges();
         }
-
     }
 }

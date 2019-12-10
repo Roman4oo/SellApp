@@ -87,3 +87,9 @@ C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.Re
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\BLL.dll.config
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\System.Data.SqlClient.dll
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\System.Data.SqlClient.xml
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml

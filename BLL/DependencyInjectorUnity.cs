@@ -23,7 +23,8 @@ namespace BLL
             container.RegisterType<SellAppContext>(new PerThreadLifetimeManager());
             container.RegisterType< IHashingService, HashingService>();
             container.RegisterInstance<IMapper>(MapperConfig.CreateMapper(), InstanceLifetime.Singleton);
-            container.RegisterType<UnitOfWork>();
+            container.RegisterType<IUnitOfWork, UnitOfWork>();
+
 
             return container;
         }

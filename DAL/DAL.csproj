@@ -153,6 +153,10 @@
     <Compile Include="Migrations\20191205104400_ChangeManyToMany.Designer.cs">
       <DependentUpon>20191205104400_ChangeManyToMany.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20191209162904_ChangeLenghOfPassword.cs" />
+    <Compile Include="Migrations\20191209162904_ChangeLenghOfPassword.designer.cs">
+      <DependentUpon>20191209162904_ChangeLenghOfPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\SellAppContextModelSnapshot.cs" />
     <Compile Include="Models\DTOs\ProductDTO.cs" />
     <Compile Include="Models\DTOs\ProductTransactionDTO.cs" />
@@ -173,6 +177,7 @@
     <Compile Include="Repositories\Concrete\RoleRepository.cs" />
     <Compile Include="Repositories\Concrete\TransactionRepository.cs" />
     <Compile Include="Repositories\Concrete\UserRepository.cs" />
+    <Compile Include="UnitOfWork\IUnitofWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>

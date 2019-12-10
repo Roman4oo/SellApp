@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SellerApp;
 
 namespace SellerApp.Migrations
 {
     [DbContext(typeof(SellAppContext))]
-    partial class SellAppContextModelSnapshot : ModelSnapshot
+    [Migration("20191209162904_ChangeLenghOfPassword")]
+    partial class ChangeLenghOfPassword
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,8 +66,6 @@ namespace SellerApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("RoleID")
                         .HasColumnType("int")
-                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
-                        .HasAnnotation("SqlServer:IdentitySeed", 1)
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
@@ -104,6 +104,7 @@ namespace SellerApp.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("UserID")
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -128,6 +129,7 @@ namespace SellerApp.Migrations
                         .IsUnicode(false);
 
                     b.Property<int?>("RoleId")
+                        .HasColumnName("RoleID")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

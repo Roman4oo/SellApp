@@ -13,11 +13,11 @@ namespace BLL.Services
 {
     public class UserService : IUserService
     {
-        private readonly UnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IHashingService _hashingService;
         private readonly IMapper _mapper;
 
-        public UserService(IHashingService hashingService, UnitOfWork unitOfWork, IMapper mapper)
+        public UserService(IHashingService hashingService, IUnitOfWork unitOfWork, IMapper mapper)
         {
             _hashingService = hashingService;
             _mapper = mapper;
