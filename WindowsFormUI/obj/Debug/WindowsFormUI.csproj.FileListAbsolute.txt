@@ -93,3 +93,8 @@ C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extens
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.xml
 C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.MainForm.resources
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.ViewProductForm.resources
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.ProductOnAddForm.resources
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.TransactionDetailsForm.resources
+C:\Users\rivane\source\repos\SellingApp\WindowsFormUI\obj\Debug\WindowsFormUI.DeleteByIdForm.resources

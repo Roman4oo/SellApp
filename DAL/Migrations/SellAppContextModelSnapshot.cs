@@ -27,6 +27,9 @@ namespace SellerApp.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("IsSold")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("varchar(20)")
                         .HasMaxLength(20)
@@ -48,9 +51,6 @@ namespace SellerApp.Migrations
                     b.Property<int?>("TransactionId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.HasKey("ProductId", "TransactionId");
 
                     b.HasIndex("TransactionId");
@@ -64,8 +64,6 @@ namespace SellerApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("RoleID")
                         .HasColumnType("int")
-                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
-                        .HasAnnotation("SqlServer:IdentitySeed", 1)
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
@@ -104,6 +102,7 @@ namespace SellerApp.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnName("UserID")
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -123,11 +122,12 @@ namespace SellerApp.Migrations
                         .IsUnicode(false);
 
                     b.Property<string>("Password")
-                        .HasColumnType("varchar(300)")
-                        .HasMaxLength(300)
+                        .HasColumnType("varchar(20)")
+                        .HasMaxLength(20)
                         .IsUnicode(false);
 
                     b.Property<int?>("RoleId")
+                        .HasColumnName("RoleID")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

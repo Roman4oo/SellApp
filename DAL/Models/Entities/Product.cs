@@ -13,8 +13,7 @@ namespace SellerApp
         public int Id { get; set; }
         public string Name { get; set; }
         public double? Price { get; set; }
-
-
+        public bool IsSold { get; set; }
 
         public virtual ICollection<ProductTransaction> ProductsTransactions { get; set; }
     }

@@ -27,7 +27,7 @@ namespace WindowsFormUI
 
         
 
-        private void signIn_btn_onClick(object sender, EventArgs e)
+        private void signIn_btn_Click(object sender, EventArgs e)
         {
             if (email_box.Text.Length == 0 || pas_box.Text.Length == 0)
             {
@@ -36,10 +36,16 @@ namespace WindowsFormUI
             else
             {
                 LoginViewModel loginViewModel = new LoginViewModel();
-
+                
+                loginViewModel.Email = email_box.Text;
+                loginViewModel.Password = pas_box.Text;
                 try
                 {
                     var user =_authService.SignIn(loginViewModel);
+                    MainForm mainForm = DependencyInjectorUnity.Resolve<MainForm>();
+                    mainForm.Show();
+                    this.Hide();
+
                 }
                 catch(ValidationException ex)
                 {

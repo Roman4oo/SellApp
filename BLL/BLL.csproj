@@ -66,9 +66,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Abstract\IAuthService.cs" />
     <Compile Include="Services\Abstract\IHashingService.cs" />
+    <Compile Include="Services\Abstract\IProductService.cs" />
+    <Compile Include="Services\Abstract\ITransactionService.cs" />
     <Compile Include="Services\Abstract\IUserService.cs" />
     <Compile Include="Services\Concrete\AuthService.cs" />
     <Compile Include="Services\Concrete\HashingService.cs" />
+    <Compile Include="Services\Concrete\ProductService.cs" />
+    <Compile Include="Services\Concrete\TransactionService.cs" />
     <Compile Include="Services\Concrete\UserService.cs" />
   </ItemGroup>
   <ItemGroup>

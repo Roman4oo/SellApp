@@ -11,6 +11,8 @@ namespace DAL.UnitOfWork
     {
         ProductRepository ProductRepository { get; }
         UserRepository UserRepository { get; }
+        TransactionRepository TransactionRepository { get; }
+        RoleRepository RoleRepository { get; }
         void Dispose();
         void Complete();
 

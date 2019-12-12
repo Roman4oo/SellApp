@@ -1,6 +1,8 @@
-﻿using BLL.Services.Abstract;
+﻿using BLL;
+using BLL.Services.Abstract;
 using DAL.Models.ViewModels;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Windows.Forms;
 
 namespace WindowsFormUI
@@ -32,14 +34,36 @@ namespace WindowsFormUI
                     FirstName = fname_box.Text,
                     LastName = lname_box.Text
                 };
+                try
+                { 
+                    _userService.CreateUser(registrationViewModel);
 
-                _userService.CreateUser(registrationViewModel);
+                    MessageBox.Show("User has benn created successfully");
 
-                MessageBox.Show("User have been created successfully");
+                    MainForm mainForm = DependencyInjectorUnity.Resolve<MainForm>();
+                    mainForm.Show();
+                    this.Hide();
+
+
+                }
+
+                catch(ValidationException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
             }
 
 
 
+        }
+
+        private void backToLogin_btn_Click(object sender, EventArgs e)
+        {
+            AuthForm AuthForm = DependencyInjectorUnity.Resolve<AuthForm>();
+            AuthForm.Show();
+            this.Hide();
         }
     }
 }

@@ -30,9 +30,7 @@ namespace WindowsFormUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.email_box = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.pas_box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,11 +44,6 @@ namespace WindowsFormUI
             this.email_box.Name = "email_box";
             this.email_box.Size = new System.Drawing.Size(207, 20);
             this.email_box.TabIndex = 0;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // label1
             // 
@@ -85,6 +78,7 @@ namespace WindowsFormUI
             this.signIn_btn.TabIndex = 4;
             this.signIn_btn.Text = "Sign In";
             this.signIn_btn.UseVisualStyleBackColor = true;
+            this.signIn_btn.Click += new System.EventHandler(this.signIn_btn_Click);
             // 
             // signUp_btn
             // 
@@ -118,7 +112,6 @@ namespace WindowsFormUI
         #endregion
 
         private System.Windows.Forms.TextBox email_box;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox pas_box;
         private System.Windows.Forms.Label label2;

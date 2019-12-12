@@ -112,6 +112,7 @@
             this.backToLogin_btn.TabIndex = 9;
             this.backToLogin_btn.Text = "Back to Login";
             this.backToLogin_btn.UseVisualStyleBackColor = true;
+            this.backToLogin_btn.Click += new System.EventHandler(this.backToLogin_btn_Click);
             // 
             // signUp_btn
             // 

@@ -27,11 +27,11 @@ namespace BLL.Services
 
         }
 
-        public UserDTO SignIn (LoginViewModel loginViewModel)
+        public UserDTO SignIn(LoginViewModel loginViewModel)
         {
             var existedUser = _unitOfWork.UserRepository.SingleOrDefault(u => u.Email == loginViewModel.Email);
 
-            if (existedUser == null && !_hashingService.IsStringEqualHash(loginViewModel.Password, existedUser.Password))
+            if (existedUser == null || !_hashingService.IsStringEqualHash(loginViewModel.Password, existedUser.Password))
             {
                 throw new ValidationException("Invalid Credentials");
             }

@@ -26,7 +26,7 @@ namespace SellerApp.Repositories
 
         public virtual void AddRange(IEnumerable<TEntity> entities)
         {
-            _entities.AddRangeAsync(entities);
+            _entities.AddRange(entities);
         }
 
         public virtual IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> expression)
@@ -48,20 +48,37 @@ namespace SellerApp.Repositories
         {
             _entities.Remove(entity);
         }
+        public virtual TEntity Remove(params object[] keys)
+        {
+            var model = _entities.Find(keys);
+            if (model != null)
+            {
+                model = _entities.Remove(model).Entity;
+            }
+
+            return model;
+        }
 
         public void RemoveRange(IEnumerable<TEntity> range)
         {
             _entities.RemoveRange(range);
         }
 
+        public virtual IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> expression)
+        {
+            return  _entities.Where(expression).ToList();
+        }
+
         public TEntity SingleOrDefault(Expression<Func<TEntity, bool>> expression)
         {
             return _entities.SingleOrDefault(expression);
         }
+
         public virtual void Update(TEntity entity)
         {
             _entities.Update(entity);
         }
+
 
     }
 }

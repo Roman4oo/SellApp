@@ -9,7 +9,7 @@ namespace SellerApp.Repositories.Concrete
     {
         public TransactionRepository(DbContext context) : base(context)
         {
-
+            
         }
     }
 }
