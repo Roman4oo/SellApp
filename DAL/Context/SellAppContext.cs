@@ -23,7 +23,7 @@ namespace SellerApp
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=LV105\\MSSQLSERVERR;Database=SellApp;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=SellApp;Trusted_Connection=True;");
             }
         }
 

@@ -19,7 +19,13 @@ namespace WindowsFormUI
         private void ViewProductForm_Load(object sender, EventArgs e)
         {
             _productService.UpdateIsSoldPropertyIfNoTransaction();
+            // TODO: This line of code loads data into the 'sellAppDataSet1.Products' table. You can move, or remove it, as needed.
             this.productsTableAdapter1.Fill(this.sellAppDataSet1.Products);
+            _productService.UpdateIsSoldPropertyIfNoTransaction();
+            // TODO: This line of code loads data into the 'sellAppDataSet.Products' table. You can move, or remove it, as needed.
+
+
+
 
 
         }
@@ -55,6 +61,11 @@ namespace WindowsFormUI
             TransactionDetailsForm transactionDetailsForm = DependencyInjectorUnity.Resolve<TransactionDetailsForm>();
             transactionDetailsForm.Show();
             this.Hide();
+        }
+
+        private void SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

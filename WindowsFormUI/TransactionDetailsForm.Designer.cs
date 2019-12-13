@@ -34,22 +34,22 @@
             this.delete_btn = new System.Windows.Forms.Button();
             this.back_btn = new System.Windows.Forms.Button();
             this.transactionsViewBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.TransactionGridView = new System.Windows.Forms.DataGridView();
+            this.TransactionGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.transactionsViewBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.sellAppDataSet3 = new WindowsFormUI.SellAppDataSet();
-            this.transactions_ViewTableAdapter2 = new WindowsFormUI.SellAppDataSetTableAdapters.Transactions_ViewTableAdapter();
+            this.sellAppDataSet11 = new WindowsFormUI.SellAppDataSet1();
+            this.transactionsViewTableAdapter = new WindowsFormUI.SellAppDataSet1TableAdapters.TransactionsViewTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.transactionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TransactionGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransactionGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sellAppDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellAppDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // transactionViewBindingSource
@@ -85,22 +85,22 @@
             // 
             this.transactionsViewBindingSource1.DataMember = "Transactions_View";
             // 
-            // TransactionGridView
+            // TransactionGridView1
             // 
-            this.TransactionGridView.AutoGenerateColumns = false;
-            this.TransactionGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TransactionGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TransactionGridView1.AutoGenerateColumns = false;
+            this.TransactionGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TransactionGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.TransactionGridView.DataSource = this.transactionsViewBindingSource2;
-            this.TransactionGridView.Location = new System.Drawing.Point(13, 59);
-            this.TransactionGridView.Name = "TransactionGridView";
-            this.TransactionGridView.Size = new System.Drawing.Size(646, 273);
-            this.TransactionGridView.TabIndex = 3;
+            this.productIdDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn10});
+            this.TransactionGridView1.DataSource = this.transactionsViewBindingSource2;
+            this.TransactionGridView1.Location = new System.Drawing.Point(12, 59);
+            this.TransactionGridView1.Name = "TransactionGridView1";
+            this.TransactionGridView1.Size = new System.Drawing.Size(645, 273);
+            this.TransactionGridView1.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -126,38 +126,38 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "FirstName";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
+            // productIdDataGridViewTextBoxColumn
+            // 
+            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "ProductId";
+            this.productIdDataGridViewTextBoxColumn.HeaderText = "ProductId";
+            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+            // 
             // dataGridViewTextBoxColumn10
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "LastName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "LastName";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "TransactionID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "TransactionID";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "TransactionId";
-            this.dataGridViewTextBoxColumn11.HeaderText = "TransactionId";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
             // transactionsViewBindingSource2
             // 
-            this.transactionsViewBindingSource2.DataMember = "Transactions_View";
-            this.transactionsViewBindingSource2.DataSource = this.sellAppDataSet3;
+            this.transactionsViewBindingSource2.DataMember = "TransactionsView";
+            this.transactionsViewBindingSource2.DataSource = this.sellAppDataSet11;
             // 
-            // sellAppDataSet3
+            // sellAppDataSet11
             // 
-            this.sellAppDataSet3.DataSetName = "SellAppDataSet";
-            this.sellAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.sellAppDataSet11.DataSetName = "SellAppDataSet1";
+            this.sellAppDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // transactions_ViewTableAdapter2
+            // transactionsViewTableAdapter
             // 
-            this.transactions_ViewTableAdapter2.ClearBeforeFill = true;
+            this.transactionsViewTableAdapter.ClearBeforeFill = true;
             // 
             // TransactionDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.TransactionGridView);
+            this.Controls.Add(this.TransactionGridView1);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.delete_btn);
             this.Name = "TransactionDetailsForm";
@@ -166,9 +166,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.transactionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TransactionGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TransactionGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsViewBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sellAppDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellAppDataSet11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,7 +178,7 @@
         private System.Windows.Forms.BindingSource transactionViewBindingSource;
         private SellAppDataSet sellAppDataSet;
         private System.Windows.Forms.BindingSource transactionsViewBindingSource;
-        private SellAppDataSetTableAdapters.Transactions_ViewTableAdapter transactions_ViewTableAdapter;
+
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
@@ -189,22 +189,22 @@
         private SellAppDataSet sellAppDataSet1;
         private SellAppDataSet sellAppDataSet2;
         private System.Windows.Forms.BindingSource transactionsViewBindingSource1;
-        private SellAppDataSetTableAdapters.Transactions_ViewTableAdapter transactions_ViewTableAdapter1;
+ 
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn transactionIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView TransactionGridView;
-        private SellAppDataSet sellAppDataSet3;
+        private System.Windows.Forms.DataGridView TransactionGridView1;
+        private SellAppDataSet1 sellAppDataSet11;
         private System.Windows.Forms.BindingSource transactionsViewBindingSource2;
-        private SellAppDataSetTableAdapters.Transactions_ViewTableAdapter transactions_ViewTableAdapter2;
+        private SellAppDataSet1TableAdapters.TransactionsViewTableAdapter transactionsViewTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }

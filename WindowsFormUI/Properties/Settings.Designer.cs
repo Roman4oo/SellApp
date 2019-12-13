@@ -32,5 +32,16 @@ namespace WindowsFormUI.Properties {
                 return ((string)(this["SellAppConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SellApp;Integrated Security=Tr" +
+            "ue")]
+        public string SellAppConnectionString1 {
+            get {
+                return ((string)(this["SellAppConnectionString1"]));
+            }
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using DAL.Models.ViewModels;
+﻿using DAL.DTOs;
+using DAL.Models.ViewModels;
+using SellerApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +15,6 @@ namespace BLL.Services.Abstract
         void Add(ProductViewModel productViewModel);
         void UpdateIsSoldPropertyIfNoTransaction();
 
+        List<Product> GetAll();
     }
 }

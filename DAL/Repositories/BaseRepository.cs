@@ -78,7 +78,5 @@ namespace SellerApp.Repositories
         {
             _entities.Update(entity);
         }
-
-
     }
 }

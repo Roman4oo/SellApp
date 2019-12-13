@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormUI", "WindowsFormUI\WindowsFormUI.csproj", "{C31E1E48-0D3D-4CC5-BF5C-89D68584E9A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj", "{F5029567-B6BD-4E49-B94E-ABE6103EF0E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SellerWPF", "..\..\SellerWPF\SellerWPF.csproj", "{17EE6543-D5B2-4809-A1E3-A20C7A46A1D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C31E1E48-0D3D-4CC5-BF5C-89D68584E9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31E1E48-0D3D-4CC5-BF5C-89D68584E9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31E1E48-0D3D-4CC5-BF5C-89D68584E9A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5029567-B6BD-4E49-B94E-ABE6103EF0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5029567-B6BD-4E49-B94E-ABE6103EF0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5029567-B6BD-4E49-B94E-ABE6103EF0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5029567-B6BD-4E49-B94E-ABE6103EF0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EE6543-D5B2-4809-A1E3-A20C7A46A1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EE6543-D5B2-4809-A1E3-A20C7A46A1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EE6543-D5B2-4809-A1E3-A20C7A46A1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EE6543-D5B2-4809-A1E3-A20C7A46A1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

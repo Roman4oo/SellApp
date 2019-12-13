@@ -37,6 +37,17 @@ namespace BLL.Services.Concrete
             _unitOfWork.Complete();
         }
 
+        public List<Product> GetAll()
+        {
+            var products = _unitOfWork.ProductRepository.GetAll().ToList();
+
+            foreach(var product in products)
+            {
+                _mapper.Map<Product, ProductDTO>(product);
+            }
+            return products;
+        }
+
         public void UpdateIsSoldPropertyIfNoTransaction()
         {
             var products = _unitOfWork.ProductRepository.GetAll();
@@ -53,5 +64,8 @@ namespace BLL.Services.Concrete
                 _unitOfWork.Complete();
             }
         }
+
+
+
     }
 }
